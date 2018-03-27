@@ -1,0 +1,27 @@
+resources:
+- repo: self
+
+queue:
+  name: Default
+  demands: maven
+
+steps:
+- task: Maven@2
+  inputs:
+    mavenPomFile: 'DeepSpace/pom.xml'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**/*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: drop
+    publishLocation: Container
+
+
+
+
