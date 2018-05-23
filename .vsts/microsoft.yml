@@ -1,9 +1,15 @@
+
 resources:
 - repo: self
 
 queue:
   name: Default
   demands: maven
+  codeCoverageToolOption: Cobertura
+  codeCoverageFailIfEmpty: true
+  checkStyleRunAnalysis: true
+  pmdRunAnalysis: true
+  findBugsRunAnalysis: true
 
 steps:
 - task: Maven@2
