@@ -11,7 +11,7 @@ steps:
   inputs:
     mavenPomFile: 'DeepSpace/pom.xml'
     codeCoverageToolOption: Cobertura
-    codeCoverageFailIfEmpty: true
+    codeCoverageFailIfEmpty: false
     checkStyleRunAnalysis: true
     pmdRunAnalysis: true
     findBugsRunAnalysis: true
