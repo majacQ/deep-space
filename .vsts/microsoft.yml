@@ -10,8 +10,6 @@ steps:
 - task: Maven@2
   inputs:
     mavenPomFile: 'DeepSpace/pom.xml'
-    codeCoverageToolOption: Cobertura
-    codeCoverageFailIfEmpty: false
     jdkVersionOption: 1.8
     jdkArchitectureOption: x64
     checkStyleRunAnalysis: true
