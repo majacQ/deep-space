@@ -1,5 +1,5 @@
 jobs:
-  - job: first test job
+  - job: firsttestjob
     pool:
       vmImage: 'Default'
     steps:
@@ -11,7 +11,7 @@ jobs:
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
         findBugsRunAnalysis: true
-  - job: second test job
+  - job: secondtestjob
     pool:
       vmImage: 'Default'
     steps:
