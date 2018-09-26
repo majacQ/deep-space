@@ -1,29 +1,52 @@
-# Maven
-# Build your Java projects and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+jobs:
+  - job: first test job
+    pool:
+      vmImage: 'Default'
 
-pool:
-  vmImage: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.10
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
 
-steps:
-- task: Maven@2
-  inputs:
-    mavenPomFile: 'DeepSpace/pom.xml'
-    jdkVersionOption: 1.10
-    jdkArchitectureOption: x64
-    checkStyleRunAnalysis: true
-    pmdRunAnalysis: true
-    findBugsRunAnalysis: true
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(system.defaultworkingdirectory)'
+        Contents: '**/*.jar'
+        TargetFolder: '$(build.artifactstagingdirectory)'
 
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**/*.jar'
-    TargetFolder: '$(build.artifactstagingdirectory)'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(build.artifactstagingdirectory)'
+        ArtifactName: drop
+        publishLocation: Container
+        
+    - job: second test job
+      pool:
+        vmImage: 'Default'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: drop
-    publishLocation: Container
+      steps:
+      - task: Maven@2
+        inputs:
+          mavenPomFile: 'DeepSpace/pom.xml'
+          jdkVersionOption: 1.10
+          jdkArchitectureOption: x64
+          checkStyleRunAnalysis: true
+          pmdRunAnalysis: true
+          findBugsRunAnalysis: true
+
+      - task: CopyFiles@2
+        inputs:
+          SourceFolder: '$(system.defaultworkingdirectory)'
+          Contents: '**/*.jar'
+          TargetFolder: '$(build.artifactstagingdirectory)'
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '$(build.artifactstagingdirectory)'
+          ArtifactName: drop
+          publishLocation: Container
