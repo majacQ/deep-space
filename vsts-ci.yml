@@ -1,7 +1,6 @@
 jobs:
   - job: firsttestjob
-    pool:
-      vmImage: 'Default'
+    pool: 'Default'
     steps:
     - task: Maven@2
       inputs:
@@ -12,8 +11,7 @@ jobs:
         pmdRunAnalysis: true
         findBugsRunAnalysis: true
   - job: secondtestjob
-    pool:
-      vmImage: 'Default'
+    pool: 'Default'
     steps:
     - task: Maven@2
       inputs:
