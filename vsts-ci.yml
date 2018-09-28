@@ -5,7 +5,7 @@ jobs:
     - task: Maven@2
       inputs:
         mavenPomFile: 'DeepSpace/pom.xml'
-        jdkVersionOption: 1.10
+        jdkVersionOption: 1.8
         jdkArchitectureOption: x64
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
@@ -16,7 +16,7 @@ jobs:
     - task: Maven@2
       inputs:
         mavenPomFile: 'DeepSpace/pom.xml'
-        jdkVersionOption: 1.10
+        jdkVersionOption: 1.8
         jdkArchitectureOption: x64
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
