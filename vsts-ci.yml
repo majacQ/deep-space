@@ -1,7 +1,8 @@
+
 jobs:
-   - job: firsttestjob
-     pool: 'Default'
-     steps:
+  - job: firsttestjob
+    pool: 'Default'
+    steps:
     - task: Maven@2
       inputs:
         mavenPomFile: 'DeepSpace/pom.xml'
@@ -9,10 +10,10 @@ jobs:
         jdkArchitectureOption: x64
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
-         findBugsRunAnalysis: true
-   - job: secondtestjob
-     pool: 'Default'
-     steps:
+        findBugsRunAnalysis: true
+  - job: secondtestjob
+    pool: 'Default'
+    steps:
     - task: Maven@2
       inputs:
         mavenPomFile: 'DeepSpace/pom.xml'
@@ -20,4 +21,5 @@ jobs:
         jdkArchitectureOption: x64
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
-         findBugsRunAnalysis: true
+        findBugsRunAnalysis: true
+        
