@@ -1,0 +1,8 @@
+jobs:
+  - job: firsttestjob
+    pool:
+      vmImage: 'Ubuntu 16.04'
+    steps:
+    - script: dir
+      displayName: 'Command Line Script'
+        
