@@ -3,6 +3,6 @@ jobs:
     pool:
       vmImage: 'Ubuntu 16.04'
     steps:
-    - script: dir
+    - script: asdf
       displayName: 'Command Line Script'
         
