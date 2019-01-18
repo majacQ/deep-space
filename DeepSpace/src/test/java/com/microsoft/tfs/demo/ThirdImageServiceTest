@@ -133,7 +133,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages1() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -143,7 +143,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun1() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -151,7 +151,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter1() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -159,7 +159,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn1() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -167,7 +167,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth1() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -178,28 +178,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun1() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter1() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn1() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth1() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -209,13 +209,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent1() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
     
     @Test
-    public void testGetImages() {
+    public void testGetImages2() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -225,7 +225,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun2() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -233,7 +233,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter2() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -241,7 +241,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn2() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -249,7 +249,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth2() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -260,28 +260,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun2() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter2() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn2() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth2() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -291,13 +291,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent2() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages3() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -307,7 +307,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun3() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -315,7 +315,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter3() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -323,7 +323,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn3() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -331,7 +331,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth3() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -342,28 +342,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun3() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter3() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn3() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth3() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -373,13 +373,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent3() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages4() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -389,7 +389,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun4() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -397,7 +397,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter4() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -405,7 +405,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn4() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -413,7 +413,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth4() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -424,28 +424,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun4() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter4() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn4() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth4() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -455,13 +455,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent4() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages5() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -471,7 +471,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun5() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -479,7 +479,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter5() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -487,7 +487,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn5() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -495,7 +495,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth5() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -506,28 +506,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun5() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter5() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn5() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth5() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -537,13 +537,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent5() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages6() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -553,7 +553,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun6() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -561,7 +561,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter6() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -569,7 +569,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn6() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -577,7 +577,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth6() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -588,28 +588,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun6() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter6() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn6() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth6() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -619,13 +619,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent6() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages7() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -635,7 +635,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun7() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -643,7 +643,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter7() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -651,7 +651,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn7() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -659,7 +659,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth7() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -670,28 +670,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun7() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter7() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn7() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth7() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -701,13 +701,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent7() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages8() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -717,7 +717,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun8() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -725,7 +725,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter8() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -733,7 +733,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn8() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -741,7 +741,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth8() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -752,28 +752,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun8() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter8() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn8() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth8() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -783,13 +783,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent8() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages9() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -799,7 +799,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun9() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -807,7 +807,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter9() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -815,7 +815,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn9() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -823,7 +823,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth9() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -834,28 +834,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun9() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter9() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn9() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth9() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -865,13 +865,13 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent9() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }
 
     @Test
-    public void testGetImages() {
+    public void testGetImages10() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
@@ -881,7 +881,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSun() {
+    public void testGetImagesSun10() {
         List<Image> images = this.underTest.getImages();
         Image sun = getByName(images, "sun.png");
         assertEquals(660, sun.getWidth());
@@ -889,7 +889,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesJupiter() {
+    public void testGetImagesJupiter10() {
         List<Image> images = this.underTest.getImages();
         Image jupiter = getByName(images, "jupiter.png");
         assertEquals(512, jupiter.getWidth());
@@ -897,7 +897,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesSaturn() {
+    public void testGetImagesSaturn10() {
         List<Image> images = this.underTest.getImages();
         Image saturn = getByName(images, "saturn.png");
         assertEquals(1206, saturn.getWidth());
@@ -905,7 +905,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void testGetImagesEarth() {
+    public void testGetImagesEarth10() {
         // Uncomment the following test when Earth is added
         /*
         List<Image> images = this.underTest.getImages();
@@ -916,28 +916,28 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameSun() {
+    public void getGetByNameSun10() {
         Image sun = this.underTest.getByName("sun");
         assertEquals(660, sun.getWidth());
         assertEquals(660, sun.getHeight());
     }
 
     @Test
-    public void getGetByNameJupiter() {
+    public void getGetByNameJupiter10() {
         Image jupiter = this.underTest.getByName("jupiter");
         assertEquals(512, jupiter.getWidth());
         assertEquals(512, jupiter.getHeight());
     }
 
     @Test
-    public void getGetByNameSaturn() {
+    public void getGetByNameSaturn10() {
         Image saturn = this.underTest.getByName("saturn");
         assertEquals(1206, saturn.getWidth());
         assertEquals(690, saturn.getHeight());
     }
 
     @Test
-    public void getGetByNameEarth() {
+    public void getGetByNameEarth10() {
         // Uncomment the following test when Earth is added
         /*
         Image earth = this.underTest.getByName("earth");
@@ -947,7 +947,7 @@ public class ThirdImageServiceTest {
     }
 
     @Test
-    public void getGetByNameNonExistent() {
+    public void getGetByNameNonExistent10() {
         Image nonExistent = this.underTest.getByName("nonexistent");
         assertNull(nonExistent);
     }    
