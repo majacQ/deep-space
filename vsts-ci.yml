@@ -120,5 +120,114 @@ jobs:
         jdkArchitectureOption: x64
         checkStyleRunAnalysis: true
         pmdRunAnalysis: true
-        findBugsRunAnalysis: true        
-        
+        findBugsRunAnalysis: true
+  - job: twelfthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: thirteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: fourteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: fifteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: sixteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: seventeenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: eighteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: nineteenthtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: twentiethtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: twentyfirsttestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
