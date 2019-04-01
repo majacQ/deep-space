@@ -1,8 +1,24 @@
+
 jobs:
   - job: firsttestjob
-    pool:
-      vmImage: 'Ubuntu 16.04'
+    pool: 'Default'
     steps:
-    - script: asdf
-      displayName: 'Command Line Script'
-        
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
+  - job: secondtestjob
+    pool: 'Default'
+    steps:
+    - task: Maven@2
+      inputs:
+        mavenPomFile: 'DeepSpace/pom.xml'
+        jdkVersionOption: 1.8
+        jdkArchitectureOption: x64
+        checkStyleRunAnalysis: true
+        pmdRunAnalysis: true
+        findBugsRunAnalysis: true
