@@ -17,11 +17,11 @@ jobs:
 
         jdkArchitectureOption: x64
 
-        checkStyleRunAnalysis: true
+        checkStyleRunAnalysis: false
 
-        pmdRunAnalysis: true
+        pmdRunAnalysis: false
 
-        findBugsRunAnalysis: true
+        findBugsRunAnalysis: false
 
   - job: secondtestjob
 
