@@ -13,6 +13,7 @@ jobs:
 
         mavenPomFile: 'DeepSpace/pom.xml'
 
+        goals: clean
         jdkVersionOption: 1.8
 
         jdkArchitectureOption: x64
