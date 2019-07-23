@@ -60,6 +60,17 @@ public class ImageServiceTest {
         assertEquals(4, images.size()); // Uncomment this line for Earth
     }
 
+    
+    @Test
+    public void testGetImages12333333333333333333333333333333123123123() {
+        List<Image> images = this.underTest.getImages();
+        assertNotNull(images);
+
+        // Only have one of the two lines below uncommented one at a time
+        //assertEquals(3, images.size());   // Leave this line in for no Earth
+        assertEquals(4, images.size()); // Uncomment this line for Earth
+    }
+    
     @Test
     public void testGetImagesSun() {
         List<Image> images = this.underTest.getImages();
