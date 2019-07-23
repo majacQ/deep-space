@@ -51,7 +51,7 @@ public class ImageServiceTest {
     }
 
     @Test
-    public void testGetImages() {
+    public void testGet() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
