@@ -1,6 +1,10 @@
 
-trigger
+trigger:
 - master
+pr:
+  branches:
+    include:
+    - master
 
 pool: 'Default'
 
