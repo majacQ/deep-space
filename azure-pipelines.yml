@@ -1,34 +1,10 @@
 
-jobs:
+trigger
+- master
 
-  - job: firsttestjob
+pool: 'Default'
 
-    pool: 'Default'
-
-    steps:
-
-    - task: Maven@2
-
-      inputs:
-
-        mavenPomFile: 'DeepSpace/pom.xml'
-
-        goals: clean
-        jdkVersionOption: 1.8
-
-        jdkArchitectureOption: x64
-
-        checkStyleRunAnalysis: false
-
-        pmdRunAnalysis: false
-
-        findBugsRunAnalysis: false
-
-  - job: secondtestjob
-
-    pool: 'Default'
-
-    steps:
+steps:
 
     - task: Maven@2
 
