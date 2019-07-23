@@ -25,3 +25,4 @@ steps:
         pmdRunAnalysis: true
 
         findBugsRunAnalysis: true
+        tasks: 'clean build test'
