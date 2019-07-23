@@ -871,7 +871,7 @@ public class ImageServiceTest {
     }
 
     @Test
-    public void testGetImages10() {
+    public void testGetSun() {
         List<Image> images = this.underTest.getImages();
         assertNotNull(images);
 
