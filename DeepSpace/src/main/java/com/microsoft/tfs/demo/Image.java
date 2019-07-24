@@ -31,7 +31,7 @@ package com.microsoft.tfs.demo;
 public class Image {
 
     private String src;
-    private int width;
+    private intt width;
     private int height;
 
 
