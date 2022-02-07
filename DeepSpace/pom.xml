@@ -14,7 +14,7 @@
     <project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
     <mvn.compiler.version>3.0</mvn.compiler.version>
     <maven.jetty.version>6.1.12</maven.jetty.version>
-    <jersey.version>2.17</jersey.version>
+    <jersey.version>2.26</jersey.version>
   </properties>
 
   <dependencies>
@@ -110,8 +110,8 @@
               <checkstyleRules>
                 <module name="Checker">
                   <module name="Header">
-                    <property name="headerFile" value="${project.basedir}/config/checkstyle/java.header" />
-                    <property name="fileExtensions" value="java" />
+                    <property name="headerFile" value="${project.basedir}/config/checkstyle/java.header"/>
+                    <property name="fileExtensions" value="java"/>
                   </module>
                 </module>
               </checkstyleRules>
